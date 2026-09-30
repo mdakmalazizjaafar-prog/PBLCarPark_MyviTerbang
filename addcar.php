@@ -145,7 +145,7 @@ if(isset($_POST['save'])){
 
             <div class="form-group">
                 <label for="parkingfee">Parking Fee (RM)</label>
-                <input type="number" id="parkingfee" name="parkingfee" placeholder="Enter parking fee" min="0" step="0.01" required>
+                <input type="text" id="parkingfee" name="parkingfee" placeholder="Enter parking fee" required>
             </div>
 
             <div class="button-group">
