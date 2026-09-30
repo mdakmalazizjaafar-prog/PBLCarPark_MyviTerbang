@@ -23,48 +23,26 @@
         }
 
         body {
-            background-color: #f0f8ff; /* Alice Blue Light Background */
-            padding: 30px 15px;
-        }
+            background-image: url('https://transpark.my/wp-content/uploads/2019/12/TransPark-Site-1-1-1536x864.jpg');
+            background-size: cover;
+                }
 
         .container {
-            max-width: 950px;
+            max-width: 1050px;
             margin: 0 auto;
-            background: #ffffff; /* White Container */
+            background: #222a51;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
             border: 1px solid #e1eeef;
         }
 
-        /* 1. Top Image Banner (from Storyboard) */
-        .banner-container {
-            width: 100%;
-            height: 180px;
-            background-color: #e6f2ff; /* Soft Light Blue Placeholder */
-            border: 2px dashed #99c2ff;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #0056b3;
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-
-        .banner-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
 
         /* 2. Centered "Driver List" Title */
         .title {
             text-align: center;
             font-size: 28px;
-            color: #004085; /* Dark Blue Text */
+            color: #ffffff; /* Dark Blue Text */
             margin-bottom: 20px;
         }
 
@@ -76,8 +54,8 @@
         }
 
         .btn-add {
-            background-color: #007bff; /* Primary Light Blue Button */
-            color: white;
+            background-color: rgb(233, 243, 255); /* Primary Light Blue Button */
+            color: #222a51;
             padding: 9px 18px;
             text-decoration: none;
             border-radius: 6px;
@@ -99,13 +77,13 @@
             width: 100%;
             border-collapse: collapse;
             font-size: 14px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
+            background-color: #e2f6ff;
+            border-radius: 3px;
+            overflow: hidden; 
         }
 
         .styled-table thead tr {
-            background-color: #007bff; /* Light Blue Header */
+            background-color: #132e4a;
             color: #ffffff;
             text-align: left;
         }
@@ -113,20 +91,20 @@
         .styled-table th, 
         .styled-table td {
             padding: 12px 15px;
-            border: 1px solid #d6e8fa;
+            border: 1px solid #e2f6ff;
         }
 
         .styled-table tbody tr {
-            border-bottom: 1px solid #e1eeef;
+            border-bottom: 1px solid #e2f6ff;
         }
 
         /* Alternating row colors for better reading */
         .styled-table tbody tr:nth-of-type(even) {
-            background-color: #f4f9ff; /* Softest Light Blue tint */
+            background-color: #e2f6ff
         }
 
         .styled-table tbody tr:hover {
-            background-color: #e6f0fa; /* Hover effect */
+            background-color: rgb(137, 194, 255); /* Hover effect */
         }
 
         /* 5. Actions Icons (Pencil & Trash Bin from Storyboard) */
@@ -148,24 +126,11 @@
     </style>
 </head>
 <body>
-
+<br><br>
 <div class="container">
-    <!-- 1. Top Image Header -->
-    <div class="banner-container">
-        <!-- You can replace "Image" text with an actual image tag like:
-             <img src="banner.jpg" alt="Header Image"> -->
-        <img src ="https://transpark.my/wp-content/uploads/2019/12/TransPark-Site-1-1-1536x864.jpg" alt="Car Parking Banner">
-    </div>
-
     <!-- 2. Centered Page Title -->
     <h2 class="title">Driver List</h2>
 
-    <!-- 3. Top-Right Add Button -->
-    <div class="table-controls">
-        <a href="add.php" class="btn-add">
-            <i class="fa-solid fa-plus"></i> Add Driver
-        </a>
-    </div>
 
     <!-- 4. Driver Table -->
     <table class="styled-table">
@@ -207,17 +172,16 @@
             ?>
         </tbody>
     </table>
-<br><br><br><br><br><br>
-        <!-- 2. Centered Page Title -->
-    <h2 class="title">Parking Fees</h2>
-
+    <br>
     <!-- 3. Top-Right Add Button -->
     <div class="table-controls">
-        <a href="addcar.php" class="btn-add">
-            <i class="fa-solid fa-plus"></i> Add Parking Fee
+        <a href="add.php" class="btn-add">
+            <i class="fa-solid fa-plus"></i> Add Driver
         </a>
     </div>
-
+<br><br><br>
+        <!-- 2. Centered Page Title -->
+    <h2 class="title">Parking Fees</h2>
     <!-- 4. Driver Table -->
     <table class="styled-table">
         <thead>
@@ -254,6 +218,13 @@
             ?>
         </tbody>
     </table>
+    <br>
+        <!-- 3. Top-Right Add Button -->
+    <div class="table-controls">
+        <a href="addcar.php" class="btn-add">
+            <i class="fa-solid fa-plus"></i> Add Parking Fee
+        </a>
+    </div>
 </div>
 
 </body>

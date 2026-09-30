@@ -31,68 +31,47 @@ $row = $result->fetch_assoc();
         }
 
         body {
-            background-color: #f0f8ff; /* Alice Blue Light Background */
+            background-image: url('https://transpark.my/wp-content/uploads/2019/12/TransPark-Site-1-1-1536x864.jpg');
+            background-size: cover;
             padding: 30px 15px;
         }
 
         .container {
             max-width: 550px;
             margin: 0 auto;
-            background: #ffffff; /* White Container */
+            background: #222a51; /* White Container */
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
             border: 1px solid #e1eeef;
         }
 
-        /* Top Banner Section */
-        .banner-container {
-            width: 100%;
-            height: 140px;
-            background-color: #e6f2ff; /* Soft Light Blue Placeholder */
-            border: 2px dashed #99c2ff;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #0056b3;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-
-        .banner-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         /* Centered Page Title */
         .title {
             text-align: center;
             font-size: 26px;
-            color: #004085; /* Dark Blue Text */
+            color: #ffffff;
             margin-bottom: 25px;
         }
 
         /* Form Controls */
         .form-group {
             margin-bottom: 18px;
+            color: white;
         }
 
         .form-group label {
             display: block;
             margin-bottom: 6px;
             font-weight: 600;
-            color: #333;
+            color: rgb(255, 255, 255)fff;
             font-size: 14px;
         }
 
         .form-group input {
             width: 100%;
             padding: 10px 14px;
-            border: 1px solid #b8daff;
+            border: 1px solid #466383;
             border-radius: 6px;
             font-size: 14px;
             outline: none;
@@ -101,7 +80,7 @@ $row = $result->fetch_assoc();
         }
 
         .form-group input:focus {
-            border-color: #007bff;
+            border-color: #385f8a;
             box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
             background-color: #ffffff;
         }
@@ -115,7 +94,7 @@ $row = $result->fetch_assoc();
 
         .btn-submit {
             flex: 1;
-            background-color: #007bff; /* Primary Light Blue Button */
+            background-color: #2873c3; /* Primary Light Blue Button */
             color: white;
             border: none;
             padding: 11px;
@@ -160,11 +139,6 @@ $row = $result->fetch_assoc();
 <body>
 
 <div class="container">
-    <!-- Top Image Header Banner -->
-    <div class="banner-container">
-        <!-- Replace text with <img src="banner.jpg" alt="Header Image"> if needed -->
-        Image
-    </div>
 
     <!-- Centered Page Title -->
     <h2 class="title"><i class="fa-solid fa-user-pen"></i> Edit Driver</h2>
