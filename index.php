@@ -209,7 +209,7 @@
                         <a href='editcar.php?id=".$row['id']."' class='action-icon' title='Edit'>
                             <i class='fa-solid fa-pen'></i>
                         </a>
-                        <a href='delete.php?id=".$row['id']."' class='action-icon delete' title='Delete' onclick=\"return confirm('Are you sure you want to delete this parking fee?');\">
+                        <a href='deletecar.php?id=".$row['id']."' class='action-icon delete' title='Delete' onclick=\"return confirm('Are you sure you want to delete this parking fee?');\">
                             <i class='fa-solid fa-trash'></i>
                         </a>
                     </td>
